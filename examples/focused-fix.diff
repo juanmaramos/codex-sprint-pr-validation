@@ -1,0 +1,27 @@
+# Focused Fix Diff
+
+Apply this only after Codex has identified the threshold and audit-log gaps. It is included so the demo can be completed end-to-end.
+
+```diff
+diff --git a/demo/src/customerRequests.js b/demo/src/customerRequests.js
+index b17a98c..f31329d 100644
+--- a/demo/src/customerRequests.js
++++ b/demo/src/customerRequests.js
+@@ -1,8 +1,15 @@
+ export const MANUAL_REVIEW_THRESHOLD = 80;
+ 
+ export function processCustomerRequest(request, auditLog) {
+-  if (request.riskScore > MANUAL_REVIEW_THRESHOLD) {
++  if (request.riskScore >= MANUAL_REVIEW_THRESHOLD) {
++    auditLog.push({
++      requestId: request.id,
++      action: "manual_review_required",
++      actor: "system",
++      createdAt: new Date().toISOString(),
++    });
++
+     return {
+       ...request,
+       status: "manual_review_required",
+```
+

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1040" height="280" viewBox="0 0 1040 280" role="img" aria-labelledby="title desc">
+  <title id="title">Sprint item to human review packet flow</title>
+  <desc id="desc">A flow showing sprint item, PR diff, repo guidance, Codex validation, verification, and human review packet.</desc>
+  <style>
+    .bg { fill: #ffffff; }
+    .box { fill: #f8fafc; stroke: #cbd5e1; stroke-width: 1.5; rx: 8; }
+    .box-strong { fill: #eef6ff; stroke: #5b9bd5; stroke-width: 1.8; rx: 8; }
+    .text { fill: #0f172a; font: 15px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .small { fill: #475569; font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+    .arrow { stroke: #64748b; stroke-width: 2; fill: none; marker-end: url(#arrowhead); }
+  </style>
+  <defs>
+    <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto">
+      <path d="M0,0 L8,4 L0,8 Z" fill="#64748b" />
+    </marker>
+  </defs>
+  <rect class="bg" width="1040" height="280" />
+  <rect class="box" x="30" y="70" width="150" height="90" />
+  <text class="text" x="55" y="108">Sprint item</text>
+  <text class="small" x="55" y="132">Acceptance criteria</text>
+  <rect class="box" x="225" y="70" width="150" height="90" />
+  <text class="text" x="265" y="108">PR diff</text>
+  <text class="small" x="252" y="132">Behavior changes</text>
+  <rect class="box" x="420" y="70" width="150" height="90" />
+  <text class="text" x="452" y="108">AGENTS.md</text>
+  <text class="small" x="448" y="132">Repo review rules</text>
+  <rect class="box-strong" x="615" y="55" width="170" height="120" />
+  <text class="text" x="650" y="98">Codex validation</text>
+  <text class="small" x="650" y="122">Test gaps</text>
+  <text class="small" x="650" y="142">Risky behavior</text>
+  <rect class="box" x="830" y="70" width="180" height="90" />
+  <text class="text" x="870" y="108">Human review</text>
+  <text class="small" x="872" y="132">Evidence packet</text>
+  <path class="arrow" d="M180 115 H225" />
+  <path class="arrow" d="M375 115 H420" />
+  <path class="arrow" d="M570 115 H615" />
+  <path class="arrow" d="M785 115 H830" />
+  <rect class="box" x="615" y="205" width="170" height="45" />
+  <text class="small" x="646" y="232">Verification commands</text>
+  <path class="arrow" d="M700 175 V205" />
+</svg>
+
