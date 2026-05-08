@@ -23,7 +23,7 @@ sprint item ready for PR
 -> reusable skill update
 ```
 
-IMAGE GOES HERE: `assets/sprint-pr-validation-flow.svg`
+<img src="assets/sprint-pr-validation-flow.svg" alt="Sprint item to human review packet flow" width="650"/>
 
 ## What Is Included
 
@@ -62,6 +62,8 @@ The failures show that:
 
 - risk score `80` is processed automatically even though the sprint item says the threshold is inclusive
 - manual-review routing does not write an audit event
+
+<img src="assets/reasonable-change-snippet.svg" alt="Preview of a reasonable-looking PR change with hidden boundary and audit risks" width="700"/>
 
 The focused fix is included in [examples/focused-fix.diff](examples/focused-fix.diff).
 
@@ -104,4 +106,3 @@ Codex prepares evidence. Humans still own product intent, acceptance criteria qu
 ## License
 
 MIT. See [LICENSE](LICENSE).
-
